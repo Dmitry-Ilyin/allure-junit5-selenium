@@ -28,10 +28,10 @@ public class HomePage extends BasePage {
             waitUtilElementToBeVisible(tab);
             if (tab.getAttribute("outerText").equalsIgnoreCase(value)) {
                 waitUtilElementToBeClickable(tab.findElement(By.xpath("./../a[1]"))).click();
-                return PageManager.getPageManager().getDepositPage();
+                return pageManager.getDepositPage();
             }
         }
         Assertions.fail("Пункта "+ value+" на стартовой странице не существует");
-        return PageManager.getPageManager().getDepositPage();
+        return pageManager.getPageManager().getDepositPage();
     }
 }

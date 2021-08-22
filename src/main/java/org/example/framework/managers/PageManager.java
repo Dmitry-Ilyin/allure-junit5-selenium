@@ -68,11 +68,4 @@ public class PageManager {
         }
         return depositPage;
     }
-
-    public static void resetPageManager() {
-        pageManager = null;
-    }
-
-
-
 }

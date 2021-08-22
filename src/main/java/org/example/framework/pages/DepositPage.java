@@ -32,7 +32,7 @@ public class DepositPage extends BasePage {
     @FindBy(xpath = "//input[@name='replenish']")
     private WebElement payment;
 
-    @FindBy(xpath = "//div[@class='calculator__content']//div[6]//label")
+    @FindBy(xpath = "//div[@class='calculator__content']//label[@class='calculator__check-block']")
     private List<WebElement> extraOptions;
 
     @FindBy(xpath = "//span[@class='js-calc-amount']")

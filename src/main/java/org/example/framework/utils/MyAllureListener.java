@@ -9,7 +9,7 @@ import org.junit.jupiter.api.extension.ExtensionContext;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class MyAllureListener implements AfterTestExecutionCallback {
+public class MyAllureListener extends AllureJunit5 implements AfterTestExecutionCallback {
 
     @Override
     public void afterTestExecution(ExtensionContext extensionContext) throws Exception {

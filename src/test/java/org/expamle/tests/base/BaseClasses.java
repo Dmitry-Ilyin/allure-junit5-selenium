@@ -4,11 +4,9 @@ import org.example.framework.managers.DriverManager;
 import org.example.framework.managers.InitManager;
 import org.example.framework.managers.PageManager;
 import org.example.framework.managers.TestPropManager;
-
 import org.example.framework.utils.MyAllureListener;
 import org.example.framework.utils.PropConst;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -41,10 +39,6 @@ public class BaseClasses {
         driverManager.getDriver().get(TestPropManager.getTestPropManager().getProperty(PropConst.BASE_URL));
     }
 
-    @AfterEach
-    public void AfterEach() {
-        driverManager.quitDriver();
-    }
 
     @AfterAll
     public static void afterAll() {
